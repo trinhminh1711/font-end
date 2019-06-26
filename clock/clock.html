@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Đồng hồ đếm ngược bằng JS</title>
+        
+    </head>
+    <body>
+    <style type="text/css">
+        .button
+        {
+            display: inline-block;
+        }
+    </style>   
+        <div style="margin-left: 400px; background-image: url(https://img2.thuthuatphanmem.vn/uploads/2019/01/20/background-mau-den-dep_034512965.jpg); width: 500px;height: 220px;">
+        <h1 style=" font-size: 30px; color: white; text-align: center;">
+                Nhập thông tin ban đầu <br/>
+        </h1>
+        <form style="margin-left: 160px;">
+            <input style="height: 30px; width:200px;"type="number" id="hour" placeholder="Giờ" /><br><br>
+            <input style="height: 30px; width:200px;" type="number" id="min" placeholder="Phút" /><br><br>
+            <input style="height: 30px; width:200px;" type="number" id="second" placeholder="Giây"/><br>
+        </form>
+        </div>
+        <br>
+        <div class="button" style="margin-left: 450px;">
+            <button style="width: 100px; height: 50px;" onclick="check()">Start</button> 
+        </div>
+        <div class="button">
+            <button style="width: 100px; height: 50px;" onclick="stopclock()">Stop</button> 
+        </div>
+         <div class="button">
+            <button style="width: 100px; height: 50px;" onclick="reset()">reset</button> 
+        </div>
+          <div class="button">
+            <button style="width: 100px; height: 50px;" onclick="resetall()">reset all</button> 
+        </div>
+         <div style="margin-left: 580px;">
+             <p style="color: #393835; font-size:50px;" id="start"></p>
+        </div>
+       <p id="demo"></p>
+        <script src="clock.js"></script>
+        
+    </body>
+</html>
